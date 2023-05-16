@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="static/css/login.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5"
+                        width="150px"
+                        src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span
+                        class="font-weight-bold">Muguntha Ganesh G</span><span
+                        class="text-black-50">mugunthganesh69@gmail.com</span><span> </span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label class="labels" for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="First Name" value="">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="labels" for="userName">User Name</label>
+                            <input type="text" class="form-control" id="userName" placeholder="User Name" value="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label class="labels" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" value="">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels" for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" value="">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels" for="confirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password"
+                                value="">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels" for="phoneNumber">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number" value="">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="labels" for="address">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Address" value="">
+                            </div>
+                            <div class="col-md-6">
+                            <label class="labels" for="state">State</label>
+                            <input type="text" class="form-control" id="state" placeholder="State" value="">
+                            </div>
+                            <div class="col-md-6">
+                            <label class="labels" for="country">Country</label>
+                            <input type="text" class="form-control" id="country" placeholder="Country" value="">
+                            </div>
+                            <div class="col-md-12">
+                            <label class="labels" for="role">Role</label>
+                            <select class="form-control" id="role">
+                            <option value="">Select Role</option>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            </select>
+                            </div>
+                            <div class="col-md-6" id="studentFields">
+                            <label class="labels" for="year">Year</label>
+                            <input type="text" class="form-control" id="year" placeholder="Year" value="">
+                            </div>
+                            <div class="col-md-6" id="studentFields">
+                            <label class="labels" for="class">Class</label>
+                            <input type="text" class="form-control" id="class" placeholder="Class" value="">
+                            </div>
+                            <div class="col-md-12" id="studentFields">
+                            <label class="labels" for="department">Department</label>
+                            <input type="text" class="form-control" id="department" placeholder="Department" value="">
+                            </div>
+                            <div class="col-md-12" id="teacherFields">
+                            <label class="labels" for="designation">Designation</label>
+                            <input type="text" class="form-control" id="designation" placeholder="Designation" value="">
+                            </div>
+                            <div class="col-md-12">
+                            <label class="labels" for="age">Age</label>
+                            <input type="number" class="form-control" id="age" placeholder="Age" value="">
+                            </div>
+                            <div class="col-md-12">
+                            <label class="labels" for="dob">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" placeholder="Date of Birth" value="">
+                            </div>
+                            </div>
+                            <div class="mt-5 text-center">
+                            <button class="btn btn-primary profile-button" type="button">Save Profile</button>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="p-3 py-5">
+                            <div class="p-3 py-5">
+                            <div class="d-flex justify-content-between align-items-center experience"><span>Experience</span><span
+                                                     class="border px-3 p-1 add-experience" id="addExperience"><i
+                                                         class="fa fa-plus"></i> Add</span></div>
+                            <div class="col-md-12"><label class="labels" for="experienceTitle">Experience Title</label><input
+                                                     type="text" class="form-control" id="experienceTitle" placeholder="Experience Title"
+                                                     value=""></div>
+                            <div class="col-md-12"><label class="labels" for="experienceCompany">Experience Company</label><input
+                            type="text" class="form-control" id="experience Company" placeholder="Experience Company" value=""></div>
+                            <div class="col-md-12"><label class="labels" for="experienceDuration">Experience Duration</label><input
+                                                     type="text" class="form-control" id="experienceDuration" placeholder="Experience Duration"
+                                                     value=""></div>
+                            <div class="col-md-12 mt-3"><label class="labels" for="skills">Skills</label><textarea
+                                                     class="form-control" id="skills" placeholder="Skills"></textarea></div>
+                            <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save
+                            Profile</button></div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+                            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
+                            <script>
+                                // Function to display the pop-up message
+                                function showPopUp(message) {
+                                    const popUp = document.createElement("div");
+                                    popUp.className = "popup";
+                                    popUp.textContent = message;
+                                    document.body.appendChild(popUp);
+                            
+                                    setTimeout(function () {
+                                        popUp.remove();
+                                    }, 3000);
+                                }
+                            
+                                // Submit event handler for the registration form
+                                $("#formvalidate").submit(function (event) {
+                                    event.preventDefault(); // Prevent form submission
+                            
+                                    // Perform your form validation logic here
+                            
+                                    // If the form is valid, display the success message
+                                    showPopUp("User registered successfully!");
+                            
+                                    // Optional: You can also reset the form fields after successful submission
+                                    this.reset();
+                                });
+                            </script>
+                        </body>
+                        </html>

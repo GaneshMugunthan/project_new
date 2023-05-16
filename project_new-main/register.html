@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner-warpper text-center">
+          <h2 class="title">Create an account</h2>
+          <form action="/adduser" id="formvalidate" method='post'>
+            <div class="input-group">
+              <label class="placeholder" for="fullName">Full Name</label>
+              <input class="form-control" name="fullName" id="fullName" type="text" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="userName">User Name</label>
+              <input class="form-control" name="userName" id="userName" type="text" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="email">Email</label>
+              <input class="form-control" name="email" id="email" type="email" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="password">Password</label>
+              <input class="form-control" name="password" id="password" type="password" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="confirmPassword">Confirm Password</label>
+              <input class="form-control" name="confirmPassword" id="confirmPassword" type="password" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <button type="submit" id="register">Register</button>
+          </form>
+        </div>
+        <div class="signup-wrapper text-center">
+          <a href="/login">Already have an account? <span class="text-primary">Login</span></a>
+        </div>
+      </div>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
+    <script  src="static/js/script.js"></script>
+</body>
+</html>

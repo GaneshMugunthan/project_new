@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/book_room" method="POST">
+        <label for="room">Select Room:</label>
+        <select id="room" name="room">
+          <option value="1">Room 1</option>
+          <option value="2">Room 2</option>
+          <option value="3">Room 3</option>
+        </select><br>
+      
+        <label for="start_time">Start Time:</label>
+        <input type="datetime-local" id="start_time" name="start_time"><br>
+      
+        <label for="end_time">End Time:</label>
+        <input type="datetime-local" id="end_time" name="end_time"><br>
+      
+        <label for="organizer">Organizer:</label>
+        <input type="text" id="organizer" name="organizer"><br>
+      
+        <input type="submit" value="Submit">
+      </form>
+      
+    
+</body>
+</html>

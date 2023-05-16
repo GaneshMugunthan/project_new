@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner-warpper text-center">
+          <h2 class="title">Create an student/teacher account</h2>
+          <form action="/register" id="formvalidate" method="post">
+            <div class="input-group">
+              <label class="placeholder" for="fullName">Full Name</label>
+              <input class="form-control" name="fullName" id="fullName" type="text" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="userName">User Name</label>
+              <input class="form-control" name="userName" id="userName" type="text" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="email">Email</label>
+              <input class="form-control" name="email" id="email" type="email" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="password">Password</label>
+              <input class="form-control" name="password" id="password" type="password" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="confirmPassword">Confirm Password</label>
+              <input class="form-control" name="confirmPassword" id="confirmPassword" type="password" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="phoneNumber">Phone Number</label>
+              <input class="form-control" name="phoneNumber" id="phoneNumber" type="tel" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="address">Address</label>
+              <input class="form-control" name="address" id="address" type="text" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="state">State</label>
+              <input class="form-control" name="state" id="state" type="text" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="country">Country</label>
+              <input class="form-control" name="country" id="country" type="text" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="role">Role</label>
+              <select class="form-control" name="role" id="role" required>
+                <option value="">Select Role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+              </select>
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group" id="studentFields">
+              <label class="placeholder" for="year">Year</label>
+              <input class="form-control" name="year" id="year" type="text" placeholder="" />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group" id="studentFields">
+              <label class="placeholder" for="class">Class</label>
+              <input class="form-control" name="class" id="class" type="text" placeholder="" />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group" id="studentFields">
+              <label class="placeholder" for="department">Department</label>
+              <input class="form-control" name="department" id="department" type="text" placeholder="" />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group" id="teacherFields">
+              <label class="placeholder" for="designation">Designation</label>
+              <input class="form-control" name="designation" id="designation" type="text" placeholder="" />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="age">Age</label>
+              <input class="form-control" name="age" id="age" type="number" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <div class="input-group">
+              <label class="placeholder" for="dob">Date of Birth</label>
+              <input class="form-control" name="dob" id="dob" type="date" placeholder="" required />
+              <span class="lighting"></span>
+            </div>
+            <button type="submit" id="register">Register</button>
+          </form>
+        </div>
+        <div class="signup-wrapper text-center">
+          <a href="/login">Already have an account? <span class="text-primary">Login</span></a>
+        </div>
+      </div>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
+    <script>
+      // Function to display the pop-up message
+      function showPopUp(message) {
+          const popUp = document.createElement("div");
+          popUp.className = "popup";
+          popUp.textContent = message;
+          document.body.appendChild(popUp);
+
+          setTimeout(function() {
+              popUp.remove();
+          }, 3000);
+      }
+
+      // Submit event handler for the registration form
+      $("#formvalidate").submit(function(event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Perform your form validation logic here
+
+          // If the form is valid, display the success message
+          showPopUp("User registered successfully!");
+
+          // Optional: You can also reset the form fields after successful submission
+          this.reset();
+      });
+  </script>
+</body>
+</html>
+
